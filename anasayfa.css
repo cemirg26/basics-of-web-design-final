@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("img/slide-3.jpg");
+    background-size: cover;
+}
+a{
+    color: black;
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    
+}
+/*header start*/
+header{
+    height: 100px;
+    border-bottom: 2px solid black
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+header nav .logo a{
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    
+
+}
+.logo{
+    border-image: url(img/gt.png);   
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+
+}
+nav ul li a {
+color: black;
+text-decoration: none;
+transition: color .25s ease;
+font-weight: 600;
+}
+nav ul li a:hover{
+    color: #0ba2c0; 
+}
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;   
+     
+}
+nav .menu .menu-button{
+    color: #0ba2c0;
+    text-decoration: none;    
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25s ease;
+}
+nav .menu .menu-button:hover{
+    background-color: #0ba2c0;
+    color: orangered;
+
+    
+    
+}
+/*header end*/
+/* !section start*/
+.content{
+    color: black;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+    
+
+}
+.content h1{
+    font-size: 60px;
+    text-align: center;
+    background-color: black;
+    color: #0ba2c0;
+}
+
+.content p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+    font-weight: 550;
+    background-color: black;
+    color: #0ba2c0;
+    
+}
+.content .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+.content .links a{
+    background-color: black;
+    padding: 20px;
+    width: 280px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in; 
+} 
+.content .links a:hover{
+    background-color: #0ba2c0;
+    color: black;
+}
+
+/* !section end*/
+/* responsive start */
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+    .menu ul{
+        column-gap: 20px;
+
+    }
+    .menu .menu-button{
+        column-gap: 30px   ;
+    }
+}
+
+ /* responsive end */
+
+ /*! yorumlar start  */
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5 rem;
+  }
+  
+  .review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: none;
+    border-radius: 2rem;
+    
+  }
+  
+  .review .box-container .box p {
+    font-size: 30px;
+    line-height: 1.8;
+    padding: 30px;
+    color: orangered;
+   
+}
+  
+  .review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+  
+  .review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: gold;
+  }
+  .review h1{
+    background-color: black;
+    padding: 20px;
+    width:  280px;
+    color: #0ba2c0;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in; 
+    margin: auto;
+    
+} 
+.review h1:hover{
+    background-color: #0ba2c0;
+    color: orangered;
+}
+  
+/*! yorumlar end */
+/* iletişim start */
+
+
+
+/* iletişim end */
+
+/* section marka start */
+.btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #0ba2c0;
+    background-color: var(--black-color);
+    cursor: pointer;
+    
+}   
+
+/* section marka end */
